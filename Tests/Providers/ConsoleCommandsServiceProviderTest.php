@@ -21,9 +21,6 @@ class ConsoleCommandsServiceProviderTest extends TestCase
 
         $container->instance('config', [
             'viserio' => [
-                'console' => [
-                    'version' => '1',
-                ],
                 'routing' => [
                     'path' => '',
                 ],
