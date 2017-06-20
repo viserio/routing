@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Routing\Proxie;
+namespace Viserio\Component\Routing\Proxy;
 
+use Viserio\Component\Contracts\Routing\Router as RouterContract;
 use Viserio\Component\StaticalProxy\StaticalProxy;
 
 class Route extends StaticalProxy
@@ -13,6 +14,6 @@ class Route extends StaticalProxy
      */
     public static function getInstanceIdentifier()
     {
-        return 'route';
+        return RouterContract::class;
     }
 }
